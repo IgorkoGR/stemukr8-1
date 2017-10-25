@@ -1,0 +1,230 @@
+<html>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Project CSS -->
+	<link href="css/project.css" rel="stylesheet">
+	<!-- Jquery and bootstrap scripts -->
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/page_transfer.js"></script>
+    
+	<head>
+		<title>
+			Profile
+		</title>
+	</head>
+
+	<body>
+		<div class="head_bar btn-group">
+			<!-- Bar. It contatins 6 buttons -->
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('Profile.html')">Профіль</button>
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('https://www.google.com')">Новини</button>
+					<button type="button" class="btn btn-default bar_button col-md-2">Предмети</button>
+					<button type="button" class="btn btn-default bar_button col-md-2">Статистика</button>
+					<button type="button" class="btn btn-default bar_button col-md-2">Налаштування</button>
+					<button type="button" class="btn btn-default bar_button col-md-2">Вийти</button>
+		</div>
+		<div class="page_container">
+			<div>
+				<!-- Page contents -->
+				<div class="container">
+					<div class="row">
+						<!-- User info -->
+						<div class="col-sm-4">
+							<img src="graphics/derp.jpg" class="img-thumbnail" alt="Avatar" width="540" height="542"> 
+						</div>
+						<div class="col-sm-4">
+							<h1>Прізвище Ім'я</h1>
+							<h2>Клас: 5A</h2>
+							<h2>Ім'я вчителя</h2>
+						</div>
+					</div>
+				</div>
+				<hr/>
+				<div class="container">
+					<!-- Timetable -->
+					<div class="row">
+						<div class="col-md-6 day_button">
+						    <h2>Понеділок</h2>
+							<table class="table table-bordered">
+								<thead>
+									<tr>
+									<th>№</th>
+									<th>Предмет</th>
+									<th>Наявність Д\З</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									<td>1</td>
+									<td>Англійська Мова</td>
+									<td>Немає</td>
+									</tr>
+									<tr>
+									<td>2</td>
+									<td>Фізика</td>
+									<td>mary@example.com</td>
+									</tr>
+									<tr>
+									<td>3</td>
+									<td>Алгебра</td>
+									<td>Немає</td>
+									</tr>
+									<tr>
+									<td>4</td>
+									<td>Історія</td>
+									<td>Немає</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col-md-6 day_button coming">
+						<h2>Четвер</h2>						<table class="table table-bordered">
+							<thead>
+								<tr>
+								<th>№</th>
+								<th>Предмет</th>
+								<th>Наявність Д\З</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td>1</td>
+								<td>Геометрія</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>2</td>
+								<td>Хімія</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>3</td>
+								<td>Фізика</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>4</td>
+								<td>Історія</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+							</tbody>
+						</table>
+
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6 day_button">
+							<h2>Вівторок</h2>
+							<table class="table table-bordered">
+							<thead>
+								<tr>
+								<th>№</th>
+								<th>Предмет</th>
+								<th>Наявність Д\З</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td>1</td>
+								<td>Інформатика</td>
+								<td>Немає</td>
+								</tr>
+								<tr>
+								<td>2</td>
+								<td>Художня Культура</td>
+								<td>Немає</td>
+								</tr>
+								<tr>
+								<td>3</td>
+								<td>Українська Мова</td>
+								<td>Немає</td>
+								</tr>
+								<tr>
+								<td>4</td>
+								<td>Хімія</td>
+								<td>Немає</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						<div class="col-md-6 day_button coming">
+							<h2>П'ятниця</h2>
+							<table class="table table-bordered">
+							<thead>
+								<tr>
+								<th>№</th>
+								<th>Предмет</th>
+								<th>Наявність Д\З</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td>1</td>
+								<td>Біологя</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>2</td>
+								<td>Фізкультура</td>
+								<td>Немає</td>
+								</tr>
+								<tr>
+								<td>3</td>
+								<td>Українстька Література</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>4</td>
+								<td>Алгебра</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 day_button current">
+							<h2>Середа</h2>
+							<table class="table table-bordered">
+							<thead>
+								<tr>
+								<th>№</th>
+								<th>Предмет</th>
+								<th>Наявність Д\З</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+								<td>1</td>
+								<td>Історія</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>2</td>
+								<td>Українська Література</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>3</td>
+								<td>Зарубіжна Література</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+								<tr>
+								<td>4</td>
+								<td>Інформатика</td>
+								<td><a href="">Є Д\З</a></td>
+								</tr>
+							</tbody>
+						</table>
+							
+							</div>
+							<div class="col-md-6 day_button coming">
+							<h2>Субота</h2>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
