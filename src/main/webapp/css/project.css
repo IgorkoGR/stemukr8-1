@@ -1,0 +1,81 @@
+.head_bar {
+	width: 100%;
+	height: 72px;
+	background-color: rgb(45,83,34);
+	padding-bottom: 8px;
+}
+
+.bar_button{
+	width: 16.7%;
+	height: 100%;
+	background-color: rgb(42,60,70);
+	border-radius:0px;
+	font-size: 150%;
+	color: rgb(255,255,255);
+	outline-color: rgb(42,60,70);
+}
+
+.page_container{
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 1px;
+	background-color: rgb(189,193,202);
+}
+
+.news_container{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 4%;
+	padding-top: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 4px;
+	background-color: rgb(209,200,222);
+}
+
+body{
+	background-color: rgb(205,205,205);
+}
+
+.day_button{
+	background-color: rgb(169,173,182);
+}
+
+.day_button.current{
+	background-color: rgb(160,220,160);
+}
+
+.day_button.coming{
+	background-color: rgb(160,160,220);
+}
+
+.tab_content{
+	margin-left: 2%;
+	margin-right: 10%;
+	pad-bottom: 20px;
+	background-color: rgb(189,193,202);
+	display: none;
+}
+.tab_button{
+	width: 100%;
+	padding: 10% 0 10% 0;
+}
+.tab_link{
+	
+}
+.tab_link_content{
+	display: none;
+	padding-bottom: 20px;
+}
+.tab_container{
+	float: left;
+    border: 1px solid #ccc;
+    background-color: rgb(128, 114, 112);
+    width: 160px;
+    -height: 100%;
+	-position: fixed;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 20px;
+	padding-bottom: 10px;
+}
