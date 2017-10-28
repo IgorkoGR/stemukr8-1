@@ -18,8 +18,19 @@
 .page_container{
 	margin-left: 10%;
 	margin-right: 10%;
+	padding-top: 1px;
 	background-color: rgb(189,193,202);
-	
+}
+
+.news_container{
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 4%;
+	padding-top: 4px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 4px;
+	background-color: rgb(209,200,222);
 }
 
 body{
@@ -36,4 +47,35 @@ body{
 
 .day_button.coming{
 	background-color: rgb(160,160,220);
+}
+
+.tab_content{
+	margin-left: 2%;
+	margin-right: 10%;
+	pad-bottom: 20px;
+	background-color: rgb(189,193,202);
+	display: none;
+}
+.tab_button{
+	width: 100%;
+	padding: 10% 0 10% 0;
+}
+.tab_link{
+	
+}
+.tab_link_content{
+	display: none;
+	padding-bottom: 20px;
+}
+.tab_container{
+	float: left;
+    border: 1px solid #ccc;
+    background-color: rgb(128, 114, 112);
+    width: 160px;
+    -height: 100%;
+	-position: fixed;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-right: 20px;
+	padding-bottom: 10px;
 }
