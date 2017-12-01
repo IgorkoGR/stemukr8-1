@@ -2,6 +2,7 @@ package com.mathpar.web.db.dao;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mathpar.web.db.entity.Task;
 import com.mathpar.web.entity.MathparNotebook;
 import com.mathpar.web.entity.MathparSection;
 import com.mathpar.web.entity.TaskInEduPlan;
@@ -9,6 +10,7 @@ import com.mathpar.web.exceptions.AuthException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
@@ -18,7 +20,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Repository
 @Transactional(rollbackFor = Exception.class)
@@ -148,5 +152,17 @@ public class DbTasks {
     public void deleteById(long taskId) {
         jdbcTpl.update("DELETE FROM tasks WHERE id = :taskId", new MapSqlParameterSource()
                 .addValue("taskId", taskId));
+    }
+
+
+    public List<Task> getTasksOfSubjectById(long subjectId) {
+        Map<String, Object> parameters = new HashMap<>();
+        parameters.put("subject_id", subjectId);
+
+        String sql = "SELECT tasks.id as id, tasks.task_title as name, tasks.task edu_plans.date as date " +
+                "FROM tasks LEFT JOIN edu_plans ON tasks.id=edu_plans.id_task WHERE id_group IN(" +
+                "SELECT id FROM edu_groups WHERE subject_id=:subject_id)";
+
+        return jdbcTpl.query(sql, parameters, new BeanPropertyRowMapper(Task.class));
     }
 }

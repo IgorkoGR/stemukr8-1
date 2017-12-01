@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.open-mpi:mpi:1.7.4-12022013">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/open-mpi/mpi/1.7.4-12022013/mpi-1.7.4-12022013.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/open-mpi/mpi/1.7.4-12022013/mpi-1.7.4-12022013-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/open-mpi/mpi/1.7.4-12022013/mpi-1.7.4-12022013-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

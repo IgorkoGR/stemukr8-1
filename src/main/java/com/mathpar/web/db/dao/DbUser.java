@@ -1,5 +1,6 @@
 package com.mathpar.web.db.dao;
 
+import com.mathpar.web.db.entity.Student;
 import com.mathpar.web.db.entity.User;
 import com.mathpar.web.db.entity.mappers.UserMapper;
 import com.mathpar.web.db.util.SecurityUtil;
@@ -106,4 +107,5 @@ public class DbUser {
                         "JOIN (SELECT id_user FROM students WHERE id = :studentId) s ON (s.id_user = u.id)",
                 new MapSqlParameterSource("studentId", studentId), String.class);
     }
+
 }

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="stemukr08:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="stemukr08.war">
+      <element id="artifact" artifact-name="stemukr08:war exploded" />
+    </root>
+  </artifact>
+</component>

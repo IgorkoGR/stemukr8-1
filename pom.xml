@@ -33,7 +33,7 @@
       ${project.build.directory}/${project.build.finalName}/${mathjaxDir}
     </mathjaxFontsPath>
     <!-- Use context path in util.js after filtering. -->
-    <mathparContext>/mathpar</mathparContext>
+    <mathparContext>/stemukr08</mathparContext>
     <netbeans.hint.deploy.server>Tomcat</netbeans.hint.deploy.server>
   </properties>
 
