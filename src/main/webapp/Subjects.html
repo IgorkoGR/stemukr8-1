@@ -1,0 +1,127 @@
+<html>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Project CSS -->
+	<link href="css/project.css" rel="stylesheet">
+	<!-- Jquery and bootstrap scripts -->
+	<script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/page_transfer.js"></script>
+    <script src="js/igorko's_tabs.js"></script>
+	<head>
+		<title>
+			News
+		</title>
+	</head>
+
+	<body>
+		<div class="head_bar btn-group">
+			<!-- Bar. It contatins 6 buttons -->
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('Profile.html')">Профіль</button>
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('News.html')">Новини</button>
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('Subjects.html')">Предмети</button>
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('Stats.html')">Статистика</button>
+					<button type="button" class="btn btn-default bar_button col-md-2" onclick="goToPage('Settings.html')">Налаштування</button>
+					<button type="button" class="btn btn-default bar_button col-md-2">Вийти</button>
+		</div>
+		<div class="page_container">
+			<div class="tab_container">
+				<button class="btn tab_button" onclick="openTab(event, 'algebra')">Алгебра</button>
+				<button class="btn tab_button" onclick="openTab(event, 'geometry')">Геометрія</button>
+				<button class="btn tab_button" onclick="openTab(event, 'physics')">Фізика</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Хімія</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Біологія</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Інформатика</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Історія</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Українська мова</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Художня Культура</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Українська Література</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Зарубіжна Література</button>
+				<button class="btn tab_button" onclick="openTab(event, 'nope')">Фізкультура</button>
+			</div>
+
+			<div id="algebra" class="tab_content">
+				<h3>Алгебра</h3>
+				<p>Матеріали та домашні завдання з Алгебри.</p>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'a1')">Тема 1</a></h4>
+				<div id="a1" class="tab_link_content">
+					<a>Матеріали по темі 1</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'a2')">Тема 2</a></h4>
+				<div id="a2" class="tab_link_content">
+					<a>Матеріали по темі 2</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'a3')">Тема 3</a></h4>
+				<div id="a3" class="tab_link_content">
+					<a>Матеріали по темі 3</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+			</div>
+
+			<div id="geometry" class="tab_content">
+				<h3>Геометрія</h3>
+				<p>Матеріали та домашні завдання з Геометрії.</p> 
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'g1')">Тема 1</a></h4>
+				<div id="g1" class="tab_link_content">
+					<a>Матеріали по темі 1</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'g2')">Тема 2</a></h4>
+				<div id="g2" class="tab_link_content">
+					<a>Матеріали по темі 2</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'g3')">Тема 3</a></h4>
+				<div id="g3" class="tab_link_content">
+					<a>Матеріали по темі 3</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+			</div>
+
+			<div id="physics" class="tab_content">
+				<h3>Фізика</h3>
+				<p>Матеріали та домашні завдання з Фізики.</p>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'ch1')">Тема 1</a></h4>
+				<div id="ch1" class="tab_link_content">
+					<a>Матеріали по темі 1</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'ch2')">Тема 2</a></h4>
+				<div id="ch2" class="tab_link_content">
+					<a>Матеріали по темі 2</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+				<br>
+				<h4><a class="tab_link" onclick="openTabLink(event, 'ch3')">Тема 3</a></h4>
+				<div id="ch3" class="tab_link_content">
+					<a>Матеріали по темі 3</a>
+					<br>
+					<a>Домашня робота</a>
+				</div>
+			</div>
+			
+			<div id="nope" class="tab_content">
+				<h3>Немає.</h3>
+				<p>На даний момент, цей предмет недоступний.</p>
+			</div>
+		</div>
+	</body>
+</html>
