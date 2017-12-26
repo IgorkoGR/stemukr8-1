@@ -1,0 +1,32 @@
+GET http://localhost:8080/api/tasks/122
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-18T115300.200.json
+
+###
+
+GET http://localhost:8080/api/tasks/1222
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-18T115256.500.json
+
+###
+
+GET http://localhost:8080/api/tasks/121
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-18T115238.200.json
+
+###
+
+GET http://localhost:8080/api/tasks/1
+Accept:*/*
+Cache-Control:no-cache
+
+<> 2017-12-18T115211.500.json
+
+###
+

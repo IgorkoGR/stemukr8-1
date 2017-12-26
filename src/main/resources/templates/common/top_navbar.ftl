@@ -30,6 +30,7 @@
           <@make_nav_link prefix=nav_path_prefix link="welcome.html" active=nav_active title=_("navbar.home") />
           <@make_nav_link prefix=nav_path_prefix link="./" active=nav_active title=_("navbar.workbook") />
           <@make_nav_link prefix=nav_path_prefix link="help/" active=nav_active title=_("navbar.help") />
+          <a href="./login">Login </a>
       </ul> <!-- nav -->
 
       <ul class="nav navbar-nav navbar-right">

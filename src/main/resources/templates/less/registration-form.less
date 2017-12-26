@@ -1,0 +1,107 @@
+@media(min-width: 768px) {
+  .field-label-responsive {
+    padding-top: .5rem;
+    text-align: right;
+  }
+}
+
+@media(max-width: 768px) {
+  h1.cover-heading {
+    padding-top: 35px;
+  }
+  nav {
+    padding-top: 25px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+  .masthead, .mastfoot {
+    position: relative;
+  }
+  h1.cover-heading {
+    padding-top: 55px;
+  }
+  .field-label-responsive {
+    text-align: center;
+  }
+}
+
+form .center {
+  display: table;
+  margin: 0 auto;
+  width: 100%;
+
+  .row {
+
+      .form-group {
+
+        div {
+          width: 100%;
+        }
+
+      }
+
+      input {
+        height: 40px;
+        width: 100%;
+      }
+
+  }
+
+  label {
+    color: lighten(@color5, 15%);
+    padding-top: 3px;
+  }
+
+}
+
+.strokes {
+  white-space: nowrap;
+  position: relative;
+  right: auto;
+}
+
+.hr-style {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin-bottom: 50px;
+}
+
+.register-button {
+  background-color: darken(@color3, 32%);
+  color: lighten(@color1, 10%);
+  margin-top: 25px;
+
+  &:active {
+      background-color: darken(@color3, 45%);
+      color: lighten(@color1, 5%);
+  }
+
+  &:hover, &:focus {
+      background-color: darken(@color3, 45%);
+      color: lighten(@color1, 5%);
+      outline: none;
+  }
+
+  &:focus {
+      background-color: darken(@color3, 32%);
+      color: lighten(@color1, 5%);
+      outline: none;
+  }
+
+  &:focus&:hover, &:active&:hover, &:active&:focus {
+      background-color: darken(@color3, 45%);
+      color: lighten(@color1, 5%);
+      outline: none;
+  }
+}
+ .clearfix {
+   z-index: 100;
+ }
+
+.mastfoot {
+  p {
+    margin-bottom: 0px;
+  }
+}

@@ -36,10 +36,10 @@ public class Tasks {
 
     @RequestMapping(value = "/{groupId}/new_task", method = RequestMethod.POST)
     public void newTask(@RequestBody MathparNotebook mathparNotebook,
-                        @RequestParam("task_title") String taskName,
+                        //@RequestParam("task_title") String taskName,
                         @PathVariable("groupId") long groupId)
             throws JsonProcessingException {
-        Long taskId = dbTasks.saveAsNewTask(mathparNotebook, taskName);
+        Long taskId = dbTasks.saveAsNewTask(mathparNotebook, "testTitile");//, taskName);
         // TODO: insert to proper group. DONE !!!
         if (taskId != null) { // If this is a new task.
             dbTasks.insertTaskToEduPlan(groupId, taskId);

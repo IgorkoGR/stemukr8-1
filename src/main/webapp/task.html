@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="col-sm-3"></div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<from class="from_newTask" action="/api/tasks/1/new_task" method="post">
+    <textarea id="new_task" name="task" placeholder="Write new task"></textarea>
+    <input type="text" name="answer" id="new_answer" placeholder="Write answer">
+    <input type="submit" onclick="addNewTask()">
+</from>
+
+<script>
+    var newTask = $("#new_task").val(),
+        newAnswer = $("#new_answer").val();
+
+    function addNewTask () {
+        $.post("/api/tasks/1/new_task", {
+            task: newTask,
+            answer: newAnswer
+        });
+    }
+</script>
+
+
+
+<div class="tasks_list">
+
+</div>
+<script>
+            var taskList = $(".tasks_list");
+            $.get("/api/tasks/2", (data) => {
+                for(let i = 0; i < data.sections.length; i++) {
+                    taskList.append(`
+                        <div class="task">
+                            <p>
+                                ${data.sections[i].task}
+                            </p>
+                        </div>
+                    `);
+                }
+            });
+        </script>
+
+</body>
+</html>

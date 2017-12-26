@@ -1,6 +1,7 @@
 package com.mathpar.web.db.entity;
 
 public class Task {
+
     public long id;
     public String taskTitle;
     public String task;
@@ -38,4 +39,5 @@ public class Task {
     public void setTask(String task) {
         this.task = task;
     }
+
 }
